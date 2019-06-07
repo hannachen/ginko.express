@@ -5,7 +5,7 @@ import styles from './MenuList.module.scss';
 
 export default ({category, items}) => (
   <section key={category}>
-    <h2>{`${toTitleCase(category)} Menu`} </h2>
+    <h2 className={styles.menuCategory}>{`${toTitleCase(category)} Menu`} </h2>
     <ul className={styles.menuList}>
       {items.map((item, i) => (
         <MenuListItem key={i} item={item} />

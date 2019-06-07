@@ -1,10 +1,16 @@
-import 'normalize.css';
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import styles from './Layout.module.scss';
 
 export default ({ children }) => (
-  <Container maxWidth="sm">
-    <h1>Ginko Express Anime North 2020</h1>
-    {children}
-  </Container>
+  <div>
+    <header className={styles.header}>
+      <h1>
+        <span className={styles.ginko}>Ginko Express</span>
+        <span className={styles.an}>Anime North 2020</span>
+      </h1>
+    </header>
+    <section className={styles.container}>
+      {children}
+    </section>
+  </div>
 );

@@ -1,8 +1,9 @@
-@import "../styles/variables";
+@import "~normalize.css";
+@import "./variables";
 
 body {
-  background-color: $color_gamboge;
-  color: $color_sepia;
+  background-color: $color_white;
+  color: $color_dark_sienna;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 200;

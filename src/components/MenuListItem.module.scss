@@ -3,8 +3,8 @@
 .listItem {
   margin: 0;
   width: 100%;
-  background-color: $color_gamboge;
-  border-bottom: 2px solid $color_sepia;
+  background-color: $color_white;
+  border-bottom: 1px solid $color_keyline;
 
   &:last-child {
     border-bottom: none;
@@ -13,14 +13,18 @@
 
 .listLink {
   display: flex;
-  min-height: 6em;
-  color: $color_sepia;
+  min-height: 7.5em;
+  color: $color_dark_sienna;
   text-decoration: none;
   vertical-align: middle;
+
+  &:hover {
+    background-color: $color_light_gray;
+  }
 }
 
 .itemTitle {
-  padding: .75em;
+  padding: 1em .75em 1em .5em;
   display: flex;
   flex-grow: 1;
   align-content: center;
@@ -44,25 +48,17 @@
 
 .imgContainer {
   display: block;
-  width: 6em;
+  width: 7.5em;
   height: auto;
   position: relative;
 
-  &:before {
-    content: '';
-    height: 100%;
-    border-right: 2px solid $color_sepia;
-    position: absolute;
-    right: -.75em;
-  }
-
   &:after {
     content: '';
-    top: .75em;
-    right: .75em;
-    bottom: .75em;
-    left: .75em;
-    background-color: $color_white;
+    top: 1em;
+    right: 1em;
+    bottom: 1em;
+    left: 1em;
+    background-color: #f2f2f2;
     position: absolute;
     z-index: 0;
   }

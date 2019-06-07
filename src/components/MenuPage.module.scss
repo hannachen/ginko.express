@@ -1,6 +1,12 @@
 @import "../styles/variables";
 
+.itemPage {
+  padding: 0 1em;
+}
+
 .itemImage {
   width: 100%;
   height: auto;
+  max-height: 25em;
+  object-fit: contain;
 }

@@ -1,0 +1,22 @@
+@import "../styles/variables";
+
+body {
+  background-color: $color_gamboge;
+  color: $color_sepia;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}

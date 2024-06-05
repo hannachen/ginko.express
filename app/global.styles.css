@@ -1,0 +1,4 @@
+:root {
+  --main-gradient: linear-gradient(to right bottom, #ff6c78, #ff756b, #ff805d, #ff8c51, #ff9945, #ff983f, #ff9639, #ff9532, #ff8333, #ff7037, #ff5c3d, #ff4444);
+  --text-gradient: linear-gradient(to right, #ff9334, #fd7e40, #f86b4c, #ee5957, #e14962);
+}

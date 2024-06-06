@@ -1,7 +1,6 @@
+import { useEffect, useState } from 'react';
 import type { MetaFunction } from '@remix-run/node';
-import { Header } from '~/components/Header';
-import { Introduction } from '~/components/Introduction';
-import { Menu } from '~/components/Menu/Menu';
+import ComingSoon from '~/components/ComingSoon';
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,11 +13,11 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return (
-    <div>
-      <Header />
-      <Introduction />
-      <Menu />
-    </div>
-  );
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    setIsAuthenticated(true);
+  }, []);
+
+  return <div className="app">{isAuthenticated ? <ComingSoon /> : null}</div>;
 }

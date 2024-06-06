@@ -39,7 +39,7 @@ export function Introduction() {
             size="sm"
             icon={
               <ThemeIcon size={20} radius="xl">
-                <IconBellFilled className={classes.icon} stroke={2} />
+                <IconBellFilled className={classes.icon} stroke={1.5} />
               </ThemeIcon>
             }
             center

@@ -7,7 +7,7 @@ import {
 } from '@remix-run/react';
 import type { LinksFunction } from '@remix-run/node';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
-import globalStylesheetUrl from './global.styles.css??url';
+import globalStylesheetUrl from './global.styles.css?url';
 import '@mantine/core/styles.css';
 
 export const links: LinksFunction = () => {

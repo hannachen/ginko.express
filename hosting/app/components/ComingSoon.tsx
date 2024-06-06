@@ -2,7 +2,7 @@
 
 import { Container, Center, Title, Image } from '@mantine/core';
 import Countdown, { type CountdownRendererFn } from 'react-countdown';
-import classes from './comingsoon.module.css';
+import classes from './ComingSoon.module.css';
 
 export default function ComingSoon() {
   const renderer: CountdownRendererFn = ({ days, hours, minutes, seconds }) => {
@@ -43,6 +43,7 @@ export default function ComingSoon() {
             h={250}
             w="auto"
             fit="contain"
+            className={classes.image}
           />
         </div>
       </Container>

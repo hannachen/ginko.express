@@ -11,7 +11,7 @@
 }
   
 .content {
-  max-width: rem(480px);
+  max-width: rem(520px);
   margin-right: calc(var(--mantine-spacing-xl) * 3);
 
   @media (max-width: $mantine-breakpoint-md) {
@@ -29,10 +29,6 @@
 .image {
   width: rem(376px);
   height: rem(356px);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    display: none;
-  }
 }
 
 .icon {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import ComingSoon from './components/comingsoon';
+import ComingSoon from './components/ComingSoon';
 
 export default function Page() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

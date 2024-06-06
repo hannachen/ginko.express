@@ -1,4 +1,14 @@
-import { Container, Button, Group, Title, Text, Image, List, ThemeIcon, rem } from '@mantine/core';
+import {
+  Container,
+  Button,
+  Group,
+  Title,
+  Text,
+  Image,
+  List,
+  ThemeIcon,
+  rem,
+} from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 import classes from './Introduction.module.css';
 
@@ -14,16 +24,23 @@ export function FaqIntroduction() {
         <div className={classes.content}>
           <Title className={classes.title}>Frequently Asked Questions</Title>
           <Text c="dimmed" mt="md">
-            Our takeout Anime North table is back! These items are for sale in front of our restaurant during Anime North (they are NOT available for dine-in ordering).
+            Our takeout Anime North table is back! These items are for sale in
+            front of our restaurant during Anime North (they are NOT available
+            for dine-in ordering).
           </Text>
-          <Title order={3} mt={30}>Booth Hours</Title>
+          <Title order={3} mt={30}>
+            Booth Hours
+          </Title>
           <List
             mt={30}
             spacing="sm"
             size="sm"
             icon={
               <ThemeIcon size={20} radius="xl">
-                <IconCheck style={{ width: rem(12), height: rem(12) }} stroke={1.5} />
+                <IconCheck
+                  style={{ width: rem(12), height: rem(12) }}
+                  stroke={1.5}
+                />
               </ThemeIcon>
             }
           >
@@ -38,22 +55,47 @@ export function FaqIntroduction() {
             </List.Item>
           </List>
         </div>
-        <Image src="/images/ginko-anime-north-mascot-square.png" h={250} w="auto" fit="contain" />
+        <Image
+          src="/images/ginko-anime-north-mascot-square.png"
+          h={250}
+          w="auto"
+          fit="contain"
+        />
       </div>
       <Group mt={30}>
         <Button radius="xl" size="md" className={classes.control}>
           All Food
         </Button>
-        <Button variant="default" radius="xl" size="md" className={classes.control}>
+        <Button
+          variant="default"
+          radius="xl"
+          size="md"
+          className={classes.control}
+        >
           Onigiri
         </Button>
-        <Button variant="default" radius="xl" size="md" className={classes.control}>
+        <Button
+          variant="default"
+          radius="xl"
+          size="md"
+          className={classes.control}
+        >
           Hot Food
         </Button>
-        <Button variant="default" radius="xl" size="md" className={classes.control}>
+        <Button
+          variant="default"
+          radius="xl"
+          size="md"
+          className={classes.control}
+        >
           Dessert
         </Button>
-        <Button variant="default" radius="xl" size="md" className={classes.control}>
+        <Button
+          variant="default"
+          radius="xl"
+          size="md"
+          className={classes.control}
+        >
           Drinks
         </Button>
       </Group>

@@ -4,14 +4,14 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
+} from '@remix-run/react';
+import type { LinksFunction } from '@remix-run/node';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
-import '@mantine/core/styles.css';
 import globalStylesheetUrl from './global.styles.css??url';
+import '@mantine/core/styles.css';
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: globalStylesheetUrl }];
+  return [{ rel: 'stylesheet', href: globalStylesheetUrl }];
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -25,9 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>
-          {children}
-        </MantineProvider>
+        <MantineProvider>{children}</MantineProvider>
         <ScrollRestoration />
         <Scripts />
       </body>

@@ -39,3 +39,8 @@
   width: rem(12);
   height: rem(12);
 }
+
+.subtitle {
+  color: var(--mantine-color-gray-6);
+  mix-blend-mode: luminosity;
+}

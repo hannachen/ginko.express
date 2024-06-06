@@ -27,9 +27,9 @@ export default function ComingSoon() {
       <Container size="md">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Text c="dimmed">Countdown to</Text>
             <Title order={1} className="title">
-              Ginko <span className="highlight">Anime North 2025</span>
+              <span className={classes.subtitle}>Countdown to</span><br />
+              Ginko <span className="white">Anime North 2025</span>
             </Title>
             <Countdown
               date={new Date('May 23, 2025 16:00:00')}

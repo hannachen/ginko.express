@@ -3,6 +3,10 @@
   --text-gradient: linear-gradient(to right, #ff9334, #fd7e40, #f86b4c, #ee5957, #e14962);
 }
 
+body {
+  background-image: var(--main-gradient);
+}
+
 .app,
 .full-height {
   min-height: 100vh;
@@ -13,6 +17,10 @@
   background-image: var(--text-gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.white {
+  color: var(--mantine-color-white);
 }
 
 .title {
